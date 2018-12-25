@@ -6,6 +6,7 @@ const analyze = require('./analyze');
 
 
 function start() {
+    // request的get方法
     request(config.url, function(err, res, body) {
         console.log('start1');
         if(!err && res) {
@@ -17,7 +18,7 @@ function start() {
 
 function downLoad(imgUrl, i) {
     let ext = imgUrl.split('.').pop(); //取到图片地址点号后字符串(图片文件类型)
-    request(imgUrl).pipe(fs.createWriteStream( path.join(config.imgDir, i + '.' + ext), { 'encoding': 'utf-8' } ) );
+    request(imgUrl).pipe(fs.createWriteStream( path.join(config.imgDir, i + '.' + ext) ) );
     console.log(imgUrl, i);
 }
 

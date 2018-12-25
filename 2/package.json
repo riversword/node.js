@@ -1,7 +1,7 @@
 {
-  "name": "spider-image",
+  "name": "weather",
   "version": "1.0.0",
-  "description": "",
+  "description": "查询天气，练习Node对JSON文件的读写",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,6 @@
   "author": "riversword <newjean@163.com>",
   "license": "ISC",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
     "request": "^2.85.0"
   }
 }
