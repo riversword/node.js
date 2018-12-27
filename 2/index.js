@@ -7,6 +7,7 @@ const qs = require('querystring'); //组装url
 function readCity(path, callback) {
     fs.readFile(path, function(err, data) {
         if (err) {
+            console.log('没有该目录')
             console.log(err);
         } else {
             try {
